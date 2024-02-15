@@ -105,7 +105,7 @@ col2.markdown("# Fome Zero")
 
 
 #image_path = r'C:\Users\Leticia Furletti\Repos\DATA_SCIENCE\Comunidade_Ds\FTC\project1\leths_food\pages\terra_image.png'
-image = Image.open('terra.png' )
+image_path = "./pages/terra_image.png"
 col1, col2 = st.columns([1, 10], gap="small")
 col1.image(image, width=70)
 col2.markdown("# Visão Cidades")
