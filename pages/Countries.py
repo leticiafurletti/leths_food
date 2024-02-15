@@ -8,7 +8,7 @@ import folium
 from streamlit_folium import folium_static
 import inflection
 import matplotlib.pyplot as plot
-df = pd.read_csv(r'C:\Users\Leticia Furletti\Repos\FTC\project1\pages\zomato.csv')
+df = pd.read_csv(r'C:\Users\Leticia Furletti\Repos\DATA_SCIENCE\Comunidade_Ds\FTC\project1\leths_food\pages\zomato.csv')
 
 ##LIMPANDO DATA FRAME##
 #print(df)
@@ -115,7 +115,7 @@ countries = make_sidebar(df)
     
 st.sidebar.markdown("""---""") 
 
-processed_data = pd.read_csv(r'C:\Users\Leticia Furletti\Repos\FTC\project1\zomato.csv')
+processed_data = pd.read_csv(r'C:\Users\Leticia Furletti\Repos\DATA_SCIENCE\Comunidade_Ds\FTC\project1\leths_food\pages\zomato.csv')
 st.sidebar.download_button(
     label="Download da base de dados",
     data=processed_data.to_csv(index=False, sep=";"),
@@ -125,7 +125,7 @@ st.sidebar.download_button(
 
 st.sidebar.markdown("###### Leticia Furletti")
 
-image_path = r'C:\Users\Leticia Furletti\Repos\FTC\project1\pages\terra_image.png'
+image_path = r'C:\Users\Leticia Furletti\Repos\DATA_SCIENCE\Comunidade_Ds\FTC\project1\leths_food\pages\terra_image.png'
 image = Image.open(image_path)
 col1, col2 = st.columns([1, 10], gap="small")
 col1.image(image, width=70)
