@@ -26,3 +26,5 @@ Criar soluções de dados fornecendo ao CEO os principais KPIs estratégicos org
 Painel online, hospedado em um Cloud e disponível para acesso em qualquer dispositivo conectado à internet.
 O painel pode ser acessado através desse link: https://foodmarketplace.streamlit.app/
 
+![image2](graficos_marketplace.png) 
+
