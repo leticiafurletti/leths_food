@@ -8,7 +8,8 @@ import folium
 from streamlit_folium import folium_static
 import inflection
 import matplotlib.pyplot as plot
-df = pd.read_csv(r'C:\Users\Leticia Furletti\Repos\DATA_SCIENCE\Comunidade_Ds\FTC\project1\leths_food\pages\zomato.csv')
+#df = pd.read_csv(r'C:\Users\Leticia Furletti\Repos\DATA_SCIENCE\Comunidade_Ds\FTC\project1\leths_food\pages\zomato.csv')
+df = pd.read_csv("./datasets/zomato.csv")
 
 ##LIMPANDO DATA FRAME##
 #print(df)
@@ -115,7 +116,8 @@ countries = make_sidebar(df)
     
 st.sidebar.markdown("""---""") 
 
-processed_data = pd.read_csv(r'C:\Users\Leticia Furletti\Repos\DATA_SCIENCE\Comunidade_Ds\FTC\project1\leths_food\pages\zomato.csv')
+#processed_data = pd.read_csv(r'C:\Users\Leticia Furletti\Repos\DATA_SCIENCE\Comunidade_Ds\FTC\project1\leths_food\pages\zomato.csv')
+processed_data = pd.read_csv("./datasets/zomato.csv")
 st.sidebar.download_button(
     label="Download da base de dados",
     data=processed_data.to_csv(index=False, sep=";"),
