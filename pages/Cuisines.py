@@ -10,7 +10,7 @@ import inflection
 import matplotlib.pyplot as plot
 import altair as alt
 #df = pd.read_csv(r'C:\Users\Leticia Furletti\Repos\DATA_SCIENCE\Comunidade_Ds\FTC\project1\leths_food\pages\zomato.csv')
-df = pd.read_csv("./Datasets/zomato.csv")
+df = pd.read_csv("./Datasets/zomato.csv") #para que funcione no streamlit cloud deixar o caminho onde o arquivo esta no github
 
 ##LIMPANDO DATA FRAME##
 #print(df)
@@ -104,8 +104,9 @@ col2.markdown("# Fome Zero")
 
 
 
-image_path = r'C:\Users\Leticia Furletti\Repos\DATA_SCIENCE\Comunidade_Ds\FTC\project1\leths_food\pages\terra_image.png'
-image = Image.open(image_path)
+#image_path = r'C:\Users\Leticia Furletti\Repos\DATA_SCIENCE\Comunidade_Ds\FTC\project1\leths_food\pages\terra_image.png'
+#image = Image.open(image_path)
+image = Image.open('terra.png' )
 col1, col2 = st.columns([1, 10], gap="small")
 col1.image(image, width=70)
 col2.markdown("# Visão Culinárias")

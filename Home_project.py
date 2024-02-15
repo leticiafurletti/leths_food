@@ -13,7 +13,7 @@ from streamlit_folium import folium_static
 
 #Importando csv
 #df = pd.read_csv(r'C:\Users\Leticia Furletti\Repos\DATA_SCIENCE\Comunidade_Ds\FTC\project1\leths_food\pages\zomato.csv')
-df = pd.read_csv("./Datasets/zomato.csv")
+df = pd.read_csv("./Datasets/zomato.csv") #para que funcione no streamlit cloud deixar o caminho onde o arquivo esta no github
 
 ##Limpeza do data frame
 
@@ -132,7 +132,7 @@ countries = make_sidebar(df)
 st.sidebar.markdown("""---""") 
 
 #processed_data = pd.read_csv(r'C:\Users\Leticia Furletti\Repos\DATA_SCIENCE\Comunidade_Ds\FTC\project1\leths_food\pages\zomato.csv')
-processed_data = pd.read_csv("./Datasets/zomato.csv")
+processed_data = pd.read_csv("./Datasets/zomato.csv") #para que funcione no streamlit cloud deixar o caminho onde o arquivo esta no github
 st.sidebar.download_button(
     label="Download da base de dados",
     data=processed_data.to_csv(index=False, sep=";"),
